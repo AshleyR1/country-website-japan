@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+	*{
+	background-color:#c22d2d;
+	}
+	#banner{
+	display:flex;
+    flex-grow: 1;
+	background-image:url("https://i.pinimg.com/originals/4e/cc/74/4ecc7496e5ff072f03c0c884e9faa98e.gif"); 
+ background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+	  padding: 80px;
+	justify-content: center;
+object-fit:fill;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  }
+  #banner h1{
+  background-color: transparent;
+  }
+      body {
+        font-family: Arial, Helvetica,sans-serif;
+      }
+
+      .flip-card {
+        background-color:#c22d2d ;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size:13px;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color::#c22d2d;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+
+      .flip-card1 {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-card-inner1 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      .flip-card1:hover .flip-card-inner1 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front1, .flip-card-back1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front1 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back1 {
+        background-color: #c22d2d;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+
+      .flip-card2 {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-card-inner2 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      .flip-card2:hover .flip-card-inner2 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front2, .flip-card-back2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front2 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back2 {
+        background-color: #c22d2d;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+
+      .flip-card3 {
+        background-color:#c22d2d ;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+
+      .flip-card-inner3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      .flip-card3:hover .flip-card-inner3 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front3, .flip-card-back3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front3 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back3 {
+        background-color: #c22d2d;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card4 {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-card-inner4 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      .flip-card4:hover .flip-card-inner4 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front4, .flip-card-back4 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front4 {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back4 {
+        background-color: #c22d2d;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card5 {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-card-inner5 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      .flip-card5:hover .flip-card-inner5 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front5, .flip-card-back5 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front5{
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back5 {
+        background-color: #c22d2d;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card6 {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-card-inner6 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      .flip-card6:hover .flip-card-inner6 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front6, .flip-card-back6{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front6{
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back6 {
+        background-color: #c22d2d;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+
+
+
+
+      .flip-card7 {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-card-inner7 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+      .flip-card7:hover .flip-card-inner7 {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front7, .flip-card-back7{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front7{
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back7 {
+        background-color: #c22d2d;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="culture.html">culture</a>
+        <a href="locations.html">locations</a>
+    </nav>
+    <div id="banner">
+	      <h1>Japan</h1>
+		  </div>
+    <div id="main">
+	<h1>What is Japan?</h1>
+	<p>Japan is  a string of islands, on the eastern edge of Asia. There are four main islands: Hokkaido, Honshu, Shikoku, and Kyushu. Japan's nearest mainland neighbors are the Siberian region of Russia in the north and Korea and China farther south.Japan is full of history and culture</p>
+     </div>
+	<h2>Japan has 8 regions:</h2>
+	<div class="cont1">
+	
+<div class="centered"><h1>Hokkaido</h1>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://web-japan.org/kidsweb/explore/regions/images/Kids_Region_Hokkaido_Q_Character_AkankoLake_pixta_47139233_M.jpg" alt="hokkaido" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Hokkaido</h1> 
+      <p>Hokkaido is located in the northern tip of japan near tokyo Hokkaido is  the largest prefecture that japan has.<br>Hokkaido has four seasons and no rainy season and a cool and refreshing summer and low humidity.<br>It offers good seafood and good of hiking because of the low humity.Also there are many parts of Hokkaido that is filled with nature,this includes the hot springs and the volcanic lakes that can be found in the this prefecture.<br>In addition to its nature you can <br>explore the culture by connecting with the indigenous people of the prefecture they are called of the people  ainu they reside near the lake of akan.</p>
+	      </div>
+  </div>
+</div>
+<br>
+<h1>Tohhoku</h1>
+<div class="flip-card1">
+  <div class="flip-card-inner1">
+    <div class="flip-card-front1">
+      <img src="https://res.cloudinary.com/jnto/image/upload/c_fill,f_auto,fl_lossy/v1517071201/img_premap_pc_aomori_mm48xk.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back1">
+      <h1>Tohoku</h1> 
+      <p>Tohhoku meaning east north in  japanese.It is dependent on its agriculture and can be considered as “the rice granary japan.Its far calmer and has many natural parks and incredible landscapes and it's perfect for those who love history by tohoku having meany historical treasures an example of this is that Tohoku Has homes and structures from the neolithic time period.</p> 
+     
+    </div>
+  </div>
+</div>
+
+<br>
+
+<h1>Kanto</h1>
+<div class="flip-card4">
+  <div class="flip-card-inner4">
+    <div class="flip-card-front4">
+      <img src="https://res.cloudinary.com/jnto/image/upload/c_fill,f_auto,fl_lossy/v1517073890/img_premap_pc_tokyo_xwezbf.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back3">
+      <h1>Kanto</h1> 
+      <p>The Kanto region, located on Japan's eastern coast, is home to Tokyo, one of the world's most vibrant cities and the most well known city in japan. It offers many experiences, from those who love   technology and  to those who like shopping. Kanto has a mix of everything that a person would want.
+</p> 
+     
+    </div>
+  </div>
+</div>
+
+
+<br>
+<h1>Chubu</h1>
+<div class="flip-card2">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front2">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/8f/78/d5/photo8jpg.jpg?w=300&h=300&s=1" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back2">
+      <h1>Chubu</h1> 
+      <p>Chubu is a  region located in central Japan, known for its  landscapes, and for cultural heritage, addition to  opportunities for hiking and skiing by being the place for the japanese alps offering breathtaking views.Tourists can explore historic cities like Kanazawa, known for its well-preserved Edo-period architecture. Chubu is also famous for hot spring resorts such as Gero.</p> 
+
+    </div>
+  </div>
+</div>
+
+ <br>
+<h1> Kansai</h1>
+<div class="flip-card3">
+  <div class="flip-card-inner3">
+    <div class="flip-card-front3">
+      <img src="https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/6/2016/02/iStock-542100226-1024x683.jpeg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back3">
+      <h1>Kansai</h1> 
+      <p>Kansai is a  region in Japan, known for its rich cultural heritage, historic landmarks, and  landscapes. It is home to cities like Kyoto, Osaka, and Nara, each offering different experiences depending on the person, for example in Kyoto which provides ancient temples and traditional tea ceremonies and the  bustling atmosphere of Osaka's entertainment district. The region is also famous for its food.Kansai offers a journey through Japan's past and present.Making it perfect for those who love to be part of Japanese culture.
+</p>
+   </div>
+  </div>
+</div> 
+<br>
+<br>
+<br>
+<h1>Chugoku</h1>
+<div class="flip-card5">
+  <div class="flip-card-inner5">
+    <div class="flip-card-front5">
+      <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/458000/458002-Hiroshima-Province.jpg
+" alt="atar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back5">
+      <h1>Chugoku</h1> 
+      <p>Chugoku is a region in western Japan, known for its beautiful landscapes, and its history especially for world war 2 , it's also known for its cultural heritage. It offers places like the iconic Itsukushima Shrine on Miyajima Island and the sand dunes of Tottori. The region is also home to Hiroshima, where the Peace Memorial Park and Museum on world war 2 . With its traditional castles, hot springs, and  local cuisine, Chugoku offers a way for people to enjoy  but at same time it shows who world war 2 affected people and keeps their memory alive of those affected.
+</p>
+       
+     
+     
+    </div>
+  </div>
+</div>
+
+  <h1>Shikoku</h1>
+  <div class="flip-card6">
+    <div class="flip-card-inner6">
+      <div class="flip-card-front6">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzJECddBepfBumtgkNc3Fld3QSXg4ZGlYQHw&s" alt="atar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back6">
+        <h1>Shikoku</h1> 
+        <p>Shikoku, Japan's smallest main island, is known for its  landscapes, traditional culture, and spiritual significance. It is famous for the 88-temple pilgrimage route, which allows  those seeking both religious and personal reflection. The island also offers beautiful natural scenery, including the mountains of Iya Valley and the scenic coastline of the Seto Inland Sea. With its charming rural towns, hot springs, and fresh seafood, Shikoku provides a tranquil escape from the normal loudness and energetic parts of Japan's larger cities.its perfect for those who prefer a calmer time in Japan.</p>
+     </div>
+    </div>
+  </div>
+
+  <br>
+
+
+  <h1>Kyushu</h1>
+  <div class="flip-card6">
+    <div class="flip-card-inner6">
+      <div class="flip-card-front6">
+        <img src="https://s1.it.atcdn.net/wp-content/uploads/2022/03/GettyImages-845069652.jpg
+  " alt="atar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back6">
+        <h1>Kyushu</h1> 
+        <p>Kyushu, Japan's southernmost main island, is known for its warm climate, active volcanoes, and vibrant culture. The island is home to natural wonders like the hot springs of Beppu and Mount Also, one of the world's largest active volcanoes. Kyushu also boasts rich history, with cities like Nagasaki offering a mix of  both Japanese and Western influences, while Fukuoka is known for its modern attractions and of it's food like Hakata ramen. Kyushu provides diverse landscapes, historic sites, Kyushu offers a blend of adventure, relaxation, and cultural exploration.</p>
+     </div>
+    </div>
+  </div>
+
+
+</div>
+</div>
+</div>
+  </div>      
+      </div>  
+    </div>
+  </body>
+</html>

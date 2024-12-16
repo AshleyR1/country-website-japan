@@ -1,0 +1,73 @@
+*{
+	background-color:#c22d2d;
+}
+
+.conitaner{
+	background-color:#111184;
+}
+p{
+	  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+li{
+	  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+nav{
+  padding:5px
+
+}
+#main h3{
+	flex:1;
+}
+
+nav{
+	display:flex;
+}
+nav a{
+	justify-content: center;
+	background-color:#800020;
+	color:white;
+	flex:1;
+	 padding:10px;
+	text-decoration:none;
+}
+
+#banner h1{
+ overflow: hidden;
+justify-content: center;
+  border-right: .15em black;
+   white-space: nowrap;
+  animation: typing 3.5s steps(60, end) forwards;
+  font-size: 9.6rem;
+  width: 5;
+  text-shadow:2px 2px #FFFDD0;
+
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
+.cont1 h1{
+	  display: flex;
+  flex-direction: row;
+   flex-wrap: wrap;
+
+  flex: 33.33%;
+  padding: 5px;
+  
+}
+
+.cont1 {
+	  display: flex;
+  flex-direction: row;
+   flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+
+
+}

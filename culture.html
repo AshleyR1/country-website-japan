@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src=“./script.js”></script>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+	 <style>
+      *{
+        background-color:#c22d2d;
+        }
+        #banner{
+        display:flex;
+          flex-grow: 1;
+        background-image:url("https://cdnb.artstation.com/p/assets/images/images/026/128/253/original/lennart-butz-idea5anim5.gif?1587962321"); 
+       background-size: 100vw 100vh;
+          background-repeat: no-repeat;
+          padding: 80px;
+        justify-content: center;
+      object-fit:fill;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px #888888;
+        }
+        #banner h1{
+        background-color: transparent;
+        }
+
+        * {
+        box-sizing: border-box;
+      }
+
+.main{
+  background-color: #800020;
+  padding: 20px;
+  font-family: Arial;
+}
+
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+ 
+.column {
+  float: left;
+  width: 30.33%;
+  display: none; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content {
+  background-color:#A64C62  ;
+  padding: 10px;
+}
+.content p{
+	  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+.content h4{
+
+}
+
+.show {
+  display: block;
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #A64C62;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.glow h4 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+      img {
+        vertical-align: middle;
+      }
+
+
+      .container {
+        position: relative;
+      }
+
+      .mySlides {
+        display: none;
+      }
+
+      .cursor {
+        cursor: pointer;
+      }
+
+
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+
+      .column {
+        float: left;
+        width: 16.66%;
+      }
+
+
+      .demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+      
+    </style>
+	
+  </head>
+
+ 
+  <body class="e2">
+    <script src="script.js"></script>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="culture.html">culture</a>
+       <a href="locations.html">locations</a>
+    </nav>
+    <div id="banner">
+      <h1>Culture</h1>
+    </div>
+
+    <div id="main">
+<h1>Japanese culuture</h1>
+<p>Japanese culture is a set of values that puts importance on social harmony and hard work.  until the 10th century, Japanese culture was similar to the Chinese culture, but the isolation during the Edo Period changed the rules of society. the culture was influenced by the local Shinto religion, Buddhism, Confucianism and the limited natural resources.Althoug Japanese culture has been westernized Japanese people still do everything possible to preserve their cultural heritage by practicing those traditions an example of this is the tea ceremony or wearing kimono for certain festivals.Inaddtion still following certain traditions or having jobs based on these traditions like being a geisha.</p>
+
+    </div>
+	<div class="main">
+
+<hr>
+<div class="glow">
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')">daily life</button>
+  <button class="btn" onclick="filterSelection('cars')"> festivals</button>
+  <button class="btn" onclick="filterSelection('people')"> home etiquette</button>
+</div>
+
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="https://i.dailymail.co.uk/1s/2022/07/28/08/60784275-11054753-image-a-2_1658993609213.jpg" alt="Mountains" style="width:100%">
+      <h4>shoes</h4>
+      <p>Taking off shoes when entering someone’s house</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="https://news.llu.edu/sites/news.llu.edu/files/styles/crop_featured_image/public/screen_shot_2020-08-11_at_9.15.07_am.png?itok=daHl0MQS" alt="Lights" style="width:100%">
+      <h4>masks</h4>
+      <p> Wearing a mask when sick</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="https://images.ctfassets.net/beh2ph2tgbqk/692SK6ozN4HVvpe8TTp778/9897a08ed3b9b2e13f78d49172191d60/norton-shake.jpg" alt="Nature" style="width:100%">
+      <h4>handshakes</h4>
+      <p> Not shaking hands and not hugging when meeting with loved ones
+</p>
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <img src="https://static.wixstatic.com/media/27511d_c596f6089c9449f78396b0ceeb849c2c~mv2.jpg/v1/fill/w_479,h_720,al_c,lg_1,q_80,enc_avif,quality_auto/ohiokimono_yukata_guide.jpg" alt="Car" style="width:100%">
+      <h4>The yukata</h4>
+      <p> Participating in the firework festivals or bon odori festivals during the summer by wearing a yukata.
+</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="https://www.marionskitchen.com/wp-content/uploads/2022/11/Marion-Grasby-Best-Japanese-Recipes-02.jpg" alt="Car" style="width:100%">
+      <h4>food</h4>
+      <p> Making the slurping sound when eating noodles
+</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="https://thumbs.dreamstime.com/b/washing-hands-place-ritual-visiting-shinto-shrine-89363777.jpg" alt="Car" style="width:100%">
+      <h4>shrine etiquette</h4>
+      <p> Symbolically washing hands when entering a shrine</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="https://blog.sakura.co/wp-content/uploads/2022/02/shutterstock_113752096-1.png" alt="Car" style="width:100%">
+      <h4>holidys</h4>
+      <p> Decorate one's house with dolls for the annual “girls day” and decorate the house with the samurai figure for the annual “boys day”</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://toddandmelissainjapan.wordpress.com/wp-content/uploads/2016/01/img_5190-1.jpeg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p> Wearing slippers when using the restroom
+</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-OhHD0qMF5s6Xvn7j5o9RfdPX0ENcQXDaCQ&s" alt="Car" style="width:100%">
+      <h4>food for new years</h4>
+      <p>Eating a special meal called "osechi" during the new year's day</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<script>filterSelection("all") 
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+ 
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<br>
+
+<br>
+<h1>Food</h1>
+<hr>
+<h3>Japanses culuture with food</h3>
+<p>Japanese cuisine is famous for its cultural significance, refined flavors, and delicate presentation. It's one of the most popular and influential cuisines in the world, 
+Japanese cuisine emphasizes fresh, seasonal ingredients that bring out  their pure taste and simple texture. </p>
+
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="https://media.post.rvohealth.io/wp-content/uploads/2020/08/soba-noodles-732x549-thumbnail.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQavrLq_4b8sV_dMdnWPgqYxZnQ1MLBVkwXfA&s" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuRnx_YE3mEGV3-0ihn04IAq6kO9I36qwQvw&s" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5d7kP8oNojcZvHRDrPdcbuE7aaMYVEsj-g&s" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNsc3_WA9pyQBFI7yxIhVWw14FlgP6niQNNg&s" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6i2IZo7S9in-sUiDXGSB1IG67Ddjornbdfg&s" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="https://media.post.rvohealth.io/wp-content/uploads/2020/08/soba-noodles-732x549-thumbnail.jpg" style="width:100%" onclick="currentSlide(1)" alt=" Soba <br>Japanese noodles made primarily from buckwheat flour, with a small amount of wheat flour mixed in. It has an ashen brown color, and a slightly grainy texture. The noodles are served either chilled with a dipping sauce, or hot in a noodle soup. 
+    ">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQavrLq_4b8sV_dMdnWPgqYxZnQ1MLBVkwXfA&s" style="width:100%" onclick="currentSlide(2)" alt="Dashi broth<br>
+    This intricate Japanese stock harmonizes all the ingredients in a dish, drawing out savory flavors and adding complexity. 
+    ">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuRnx_YE3mEGV3-0ihn04IAq6kO9I36qwQvw&s" style="width:100%" onclick="currentSlide(3)" alt="Sushi<br>
+    Sushi originated in Edo (now Tokyo) in the early 19th century as a street food. The style of sushi varies by region, with nigiri being popular in Tokyo and pressed sushi being popular in Osaka. 
+    ">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5d7kP8oNojcZvHRDrPdcbuE7aaMYVEsj-g&s" style="width:100%" onclick="currentSlide(4)" alt="Tempura<br>
+    This popular dish was developed by combining Spanish and Portuguese game frying techniques with a Chinese method for cooking vegetables in oil. 
+    ">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNsc3_WA9pyQBFI7yxIhVWw14FlgP6niQNNg&s" style="width:100%" onclick="currentSlide(5)" alt="Sukiyaki<br>
+    This dish was originally served in Western-style restaurants, but is now considered Japanese. It's made by cooking beef, vegetables, tofu, and other ingredients in a broth of soy sauce, mirin (sweet sake), and sugar. 
+    ">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6i2IZo7S9in-sUiDXGSB1IG67Ddjornbdfg&s" style="width:100%" onclick="currentSlide(6)" alt="Tonkatsu<br>
+    This popular native dish is made of deep-fried breaded pork cutlets
+    ">
+        </div>
+      </div>
+    </div>
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+  </body>
+</html>
